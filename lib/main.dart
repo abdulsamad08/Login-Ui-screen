@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_ui/ui.dart';
+import 'package:login_ui/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: prefer_const_constructors
     return MaterialApp(
-      home: const UiDes(),
+      debugShowCheckedModeBanner: false,
+      home: const LoginScreen(),
     );
   }
 }
